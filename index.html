@@ -5,21 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Henry Shanahan</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <script defer src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-sky-200 text-slate-700">
     <nav
-      class="flex justify-center gap-20 py-5 bg-sky-200 text-slate-700 max-sm:flex-col max-sm:gap-2 max-sm:p-5 max-sm:items-start"
+      class="fixed top-0 left-0 w-full flex justify-center gap-20 py-5 max-sm:flex-col max-sm:gap-2 max-sm:p-5 max-sm:items-start shadow-lg"
     >
       <a href="#" class="hover:underline">About Me</a>
-      <a href="#" class="hover:underline">Porfolio</a>
+      <a href="#" class="hover:underline">Portfolio</a>
       <a href="#" class="hover:underline">CV</a>
-      <a href="#" class="hover:underline">Contact </a>
+      <a href="#" class="hover:underline">Contact</a>
     </nav>
 
- 
-    <main></main>
+    <main class="flex flex-col justify-center mt-20">
+      <!-- Main content goes here -->
+      <section class="">
+        <h4>About Me</h4>
+      </section>
+
+      <section>
+        <h4>Portfolio</h4>
+      </section>
+
+      <section>
+        <h4>CV</h4>
+      </section>
+
+      <section>
+        <h4>Contact</h4>
+        <div class="flex justify-center gap-20 p-10 text-6xl">
+          <a href="mailto:henry.shanahan@gmail.com"
+            ><i class="fa-solid fa-envelope hover:text-red-300"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/henry-shanahan-b40603148"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin hover:text-red-300 text-6xl"></i>
+          </a>
+          <a
+            href="https://github.com/henry-shanahan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i
+              class="fa-brands fa-square-github hover:text-red-300 text-6xl"
+            ></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 text-center shadow-lg">
+      <p>&copy; Henry Shanahan 2025</p>
+    </footer>
   </body>
 </html>
