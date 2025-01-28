@@ -13,10 +13,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-[#EAFAEA] text-slate-700">
-    <!--Navbar-->
-
+    <!-- Navbar -->
     <nav
-      class="fixed top-0 left-0 w-full flex justify-center gap-20 py-5 z-10 bg-[#CAE0BC] max-sm:flex-col max-sm:gap-2 max-sm:p-5 max-sm:items-start shadow-lg"
+      class="fixed top-0 left-0 w-full flex justify-left gap-10 p-5 bg-[#CAE0BC] shadow-lg flex-wrap md:justify-center"
     >
       <a href="#" class="hover:underline hover:text-red-300">About Me</a>
       <a href="#" class="hover:underline hover:text-red-300">Portfolio</a>
@@ -24,127 +23,146 @@
       <a href="#" class="hover:underline hover:text-red-300">Contact</a>
     </nav>
 
-    <main class="flex flex-col justify-center mt-20 gap-5 px-10 text-center">
-      <!-- Main content goes here -->
-      <header>
+    <main
+      class="flex flex-col justify-start mt-20 px-5 lg:px-0 max-w-4xl mx-auto"
+    >
+      <!-- Header -->
+      <header class="text-left md:text-center">
         <h2 class="text-4xl pt-5">Welcome to my page!</h2>
-        <p class="p-10">
-          Thanks for dropping in, to find out a little bit more about please
+        <p class="mt-5">
+          Thanks for dropping in, to find out a little bit more about me please
           navigate around this page.
         </p>
       </header>
-      <!-- <h4 class="text-center text-4xl">About Me</h4> -->
+
       <section
-        class="container mx-auto max-w-5xl grid grid-cols-[1fr_2fr] items-center p-5 gap-10"
+        class="flex flex-col lg:flex-row lg:flex-row-[1fr_2fr] items-center lg:items-start gap-5 mt-10 text-center lg:gap-10 lg:text-left"
       >
-        <div class="flex justify-center items-center h-full">
+        <!-- Profile Picture -->
+        <div class="flex justify-center">
           <img
             src="/images/IMG_4673.JPG"
             alt="Profile Picture"
-            class="w-48 h-48 rounded-full border-4 border-gray-300 shadow-lg"
+            class="w-40 h-40 rounded-full border-4 border-gray-300 shadow-lg md:w-48 md:h-48"
           />
         </div>
 
-        <div>
-            <p>
-            Based in Bristol, I've made a bold career transition from education to the exciting field of technology. I'm currently honing my skills in iO Academy's Software Developer Essentials course, with the goal of specializing in Cyber Security.
-
-                <ul class="list-disc list-inside pt-5 gap-5 ">
-                    <li> My technical skills include: HTML, CSS, JavaScript, PHP, SQL, and React.</li>
-                   <li> I have a provisional offer for a Level 4 Cyber Security Apprenticeship with the Cabinet Office.</li>
-                   <li> I'm actively expanding my knowledge by learning Python and familiarising myself with Linux.</li>
-            </ul>
-            </p>
+        <!-- Text Content -->
+        <div class="max-w-2xl">
+          <p>
+            Based in Bristol, I've made a bold career transition from education
+            to the exciting field of technology. I'm currently honing my skills
+            in iO Academy's Software Developer Essentials course, with the goal
+            of specializing in Cyber Security.
+          </p>
+          <ul class="list-disc list-inside mt-4 space-y-2 text-left">
+            <li>
+              My technical skills include: HTML, CSS, JavaScript, PHP, SQL, and
+              React.
+            </li>
+            <li>
+              I have a provisional offer for a Level 4 Cyber Security
+              Apprenticeship with the Cabinet Office.
+            </li>
+            <li>
+              I'm actively expanding my knowledge by learning Python and
+              familiarising myself with Linux.
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="flex flex-col items-center p-5">
-        <h4 class="mb-5 text-center text-4xl">Portfolio</h4>
-        <p class="text-center mb-10">
-          Here is a selection of the projects that I have worked on so far.
-        </p>
-        <div class="grid grid-cols-2 gap-8">
-          <div class="flex flex-col items-center text-center">
+
+      <!-- Portfolio Section -->
+      <section class="mt-10 text-left md:text-center">
+        <h4 class="text-3xl mb-5">Portfolio</h4>
+        <p>Here is a selection of the projects that I have worked on so far.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5">
+          <div class="mx-auto w-80">
             <img
-              class="w-60 h-60 object-cover rounded-lg shadow-lg"
               src="/images/elementor-placeholder-image.webp"
+              class="w-full h-60 object-cover rounded-lg shadow-lg"
               alt="placeholder"
             />
-            <p class="mt-3 text-sm text-gray-700">
+            <p class="mt-3 text-gray-700">
               This is a brief description of the first project.
             </p>
           </div>
-          <div class="flex flex-col items-center text-center">
+          <div class="mx-auto w-80">
             <img
-              class="w-60 h-60 object-cover rounded-lg shadow-lg"
               src="/images/elementor-placeholder-image.webp"
+              class="w-full h-60 object-cover rounded-lg shadow-lg"
               alt="placeholder"
             />
-            <p class="mt-3 text-sm text-gray-700">
+            <p class="mt-3 text-gray-700">
               This is a brief description of the second project.
             </p>
           </div>
-          <div class="flex flex-col items-center text-center">
+          <div class="mx-auto w-80">
             <img
-              class="w-60 h-60 object-cover rounded-lg shadow-lg"
               src="/images/elementor-placeholder-image.webp"
+              class="w-full h-60 object-cover rounded-lg shadow-lg"
               alt="placeholder"
             />
-            <p class="mt-3 text-sm text-gray-700">
+            <p class="mt-3 text-gray-700">
               This is a brief description of the third project.
             </p>
           </div>
-          <div class="flex flex-col items-center text-center">
+          <div class="mx-auto w-80">
             <img
-              class="w-60 h-60 object-cover rounded-lg shadow-lg"
               src="/images/elementor-placeholder-image.webp"
+              class="w-full h-60 object-cover rounded-lg shadow-lg"
               alt="placeholder"
             />
-            <p class="mt-3 text-sm text-gray-700">
+            <p class="mt-3 text-gray-700">
               This is a brief description of the fourth project.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="p-5">
-        <h4 class="mb-5 text-center text-4xl">CV</h4>
-        <p class="pb-5">
-          If you would like further information about my working history, please feel free to download my CV.
+      <!-- CV Section -->
+      <section class="mt-10 text-left md:text-center">
+        <h4 class="text-3xl mb-5">CV</h4>
+        <p class="mb-5">
+          If you would like further information about my working history, please
+          feel free to download my CV.
         </p>
-        <a class="bg-[#CAE0BC] p-2 hover:bg-red-300 rounded bg-"href="/files/Henry Shanahan CV 2025.pdf" download="Henry_Shanahan_CV_2025.pdf">Download</a>
+        <a
+          class="bg-slate-700 text-[#EAFAEA] px-5 py-2 hover:text-slate-700 hover:bg-red-300 rounded"
+          href="/files/Henry_Shanahan_CV_2025.pdf"
+          download="Henry_Shanahan_CV_2025.pdf"
+        >
+          Download
+        </a>
       </section>
     </main>
 
-    <footer
-      class="py-4 text-center border-top-[2]"
-      style="box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1)"
-    >
-      <section class="">
-        <h4 class="mb-5 text-center text-3xl">Contact</h4>
-        <p class="text-md">
-          Please feel free to reach out. The best way to contact me is via
-          email, but feel free to check out my social media too.
-        </p>
-        <div class="flex justify-center gap-20 pt-5 text-2xl">
-          <a href="mailto:henry.shanahan@gmail.com"
-            ><i class="fa-solid fa-envelope hover:text-red-300"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/henry-shanahan-b40603148"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-linkedin hover:text-red-300"></i>
-          </a>
-          <a
-            href="https://github.com/henry-shanahan"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-square-github hover:text-red-300"></i>
-          </a>
-        </div>
-      </section>
+    <!-- Footer -->
+    <footer class="mt-10 p-5 text-left border-t border-gray-300 md:text-center">
+      <h4 class="text-2xl mb-5">Contact</h4>
+      <p class="text-md">
+        Please feel free to reach out. The best way to contact me is via email,
+        but feel free to check out my social media too.
+      </p>
+      <div class="flex justify-tart gap-10 pt-5 text-2xl md:justify-center">
+        <a href="mailto:henry.shanahan@gmail.com"
+          ><i class="fa-solid fa-envelope hover:text-red-300"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/henry-shanahan-b40603148"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin hover:text-red-300"></i>
+        </a>
+        <a
+          href="https://github.com/henry-shanahan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-square-github hover:text-red-300"></i>
+        </a>
+      </div>
       <p class="pt-5">&copy; Henry Shanahan 2025</p>
     </footer>
   </body>
