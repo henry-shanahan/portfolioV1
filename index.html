@@ -15,12 +15,22 @@
   <body class="bg-[#EAFAEA] text-slate-700">
     <!-- Navbar -->
     <nav
-      class="fixed top-0 left-0 w-full flex justify-left gap-10 p-5 bg-[#CAE0BC] shadow-lg flex-wrap md:justify-center"
+      class="fixed top-0 left-0 w-full flex justify-between items-center px-10 py-5 bg-[#CAE0BC] shadow-lg flex-wrap"
     >
-      <a href="#" class="hover:underline hover:text-red-300">About Me</a>
-      <a href="#" class="hover:underline hover:text-red-300">Portfolio</a>
-      <a href="#" class="hover:underline hover:text-red-300">CV</a>
-      <a href="#" class="hover:underline hover:text-red-300">Contact</a>
+      <!-- Name on the Left -->
+      <p class="text-slate-800 text-lg font-semibold">Henry Shanahan</p>
+
+      <!-- Nav Links on the Right -->
+      <div class="flex gap-10">
+        <a href="#about" class="hover:underline hover:text-red-300">About Me</a>
+        <a href="#portfolio" class="hover:underline hover:text-red-300"
+          >Portfolio</a
+        >
+        <a href="#cv" class="hover:underline hover:text-red-300">CV</a>
+        <a href="#contact" class="hover:underline hover:text-red-300"
+          >Contact</a
+        >
+      </div>
     </nav>
 
     <main
@@ -36,6 +46,7 @@
       </header>
 
       <section
+        id="about"
         class="flex flex-col lg:flex-row lg:flex-row-[1fr_2fr] items-center lg:items-start gap-5 mt-10 text-center lg:gap-10 lg:text-left"
       >
         <!-- Profile Picture -->
@@ -73,7 +84,7 @@
       </section>
 
       <!-- Portfolio Section -->
-      <section class="mt-10 text-left md:text-center">
+      <section id="portfolio" class="mt-10 text-left md:text-center">
         <h4 class="text-3xl mb-5">Portfolio</h4>
         <p>Here is a selection of the projects that I have worked on so far.</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5">
@@ -121,7 +132,7 @@
       </section>
 
       <!-- CV Section -->
-      <section class="mt-10 text-left md:text-center">
+      <section id="cv" class="mt-10 text-left md:text-center">
         <h4 class="text-3xl mb-5">CV</h4>
         <p class="mb-5">
           If you would like further information about my working history, please
@@ -138,7 +149,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-10 p-5 text-left border-t border-gray-300 md:text-center">
+    <footer
+      id="contact"
+      class="mt-10 p-5 text-left border-t border-gray-300 md:text-center"
+    >
       <h4 class="text-2xl mb-5">Contact</h4>
       <p class="text-md">
         Please feel free to reach out. The best way to contact me is via email,
