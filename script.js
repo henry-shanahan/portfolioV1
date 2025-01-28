@@ -52,8 +52,19 @@ function loadProjects() {
 
         hoverOverlay.appendChild(hoverTitle);
 
-      
-      });
-    })
+        // Create the description
+        const description = document.createElement("p");
+        description.textContent = projects.description;
+        description.className = "mt-3 text-gray-700";
 
+        // add all elements to the grid
+        portfolioGrid.appendChild(images);
+        portfolioGrid.appendChild(hoverOverlay);
+        portfolioGrid.appendChild(description);
+
+        // Add the grid to the portfolio
+        portfolio.appendChild(portfolioGrid);
+      });
+    });
+}
 loadProjects();
