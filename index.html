@@ -15,7 +15,8 @@
   <body class="bg-[#EAFAEA] text-slate-700">
     <!-- Navbar -->
     <nav
-      class="fixed top-0 left-0 w-full flex justify-between items-center px-10 py-5 bg-[#CAE0BC] shadow-lg flex-wrap"
+      id="navbar"
+      class="fixed top-0 left-0 w-full flex justify-between items-center px-10 py-5 bg-[#CAE0BC] shadow-lg flex-wrap z-50"
     >
       <!-- Name on the Left -->
       <p class="text-slate-800 text-lg font-semibold">Henry Shanahan</p>
@@ -23,7 +24,7 @@
       <!-- Nav Links on the Right -->
       <div class="flex gap-10">
         <a
-          href="#about"
+          href="#main"
           class="hover:text-red-300 transition-colors duration-300"
           >About Me</a
         >
@@ -43,17 +44,27 @@
       </div>
     </nav>
 
-    <main
-      class="flex flex-col justify-start mt-20 px-5 lg:px-0 max-w-4xl mx-auto"
+    <!-- Full Page Header -->
+    <header
+      class="h-screen flex flex-col justify-center items-center bg-cover bg-center relative bg-[#CAE0BC] pt-20"
     >
-      <!-- Header -->
-      <header class="text-left md:text-center">
-        <h2 class="text-4xl pt-5">Welcome to my page!</h2>
-        <p class="mt-5">
-          Thanks for dropping in, to find out a little bit more about me please
-          navigate around this page.
-        </p>
-      </header>
+      <h1 class="text-4xl md:text-6xl font-bold text-white text-center">
+        Welcome to My Portfolio
+      </h1>
+      <p class="text-lg text-white mt-4">Scroll down to explore</p>
+
+      <!-- Down Arrow -->
+      <a href="#main" class="absolute bottom-10 animate-bounce">
+        <i class="fa-sharp fa-solid fa-angle-down text-5xl text-white"></i>
+        <span id="main"></span>
+      </a>
+    </header>
+
+    <!-- Main body -->
+    <main
+      class="flex flex-col justify-start mt-20 px-5 lg:px-0 max-w-5xl mx-auto"
+    >
+      <h4 class="text-3xl mb-5 text-center">About me</h4>
 
       <section
         id="about"
@@ -64,7 +75,7 @@
           <img
             src="/images/IMG_4673.JPG"
             alt="Profile Picture"
-            class="w-40 h-40 rounded-full border-4 border-gray-300 shadow-lg md:w-48 md:h-48"
+            class="w-40 h-40 rounded-full border-4 border-gray-300 shadow-lg md:w-56 md:h-56"
           />
         </div>
 
