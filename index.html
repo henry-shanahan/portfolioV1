@@ -12,7 +12,7 @@
     <script defer src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#AAB396] text-slate-700">
+  <body class="bg-[#FFF8E8] text-slate-700">
     <!-- Navbar -->
     <nav
       id="navbar"
@@ -25,7 +25,7 @@
       <!-- Nav Links on the Right -->
       <div class="flex gap-10">
         <a
-          href="#main"
+          href="#about"
           class="hover:text-red-300 transition-colors duration-300"
           >About Me</a
         >
@@ -177,7 +177,7 @@
       </section>
 
       <!-- CV Section -->
-      <section id="cv" class="mt-10 text-left md:text-center">
+      <section id="cv" class="mt-10 text-left md:text-center p-5">
         <h4 class="text-4xl mb-5">CV</h4>
         <p class="mb-5">
           If you would like further information about my working history, please
@@ -193,42 +193,65 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer
+    <section
       id="contact"
-      class="mt-10 p-5 text-left border-t border-gray-300 md:text-center"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-10 py-20 text-left border-t border-gray-300 md:text-center bg-[#343235] text-[#9d9d9c] gap-20"
     >
-      <h4 class="text-2xl mb-5">Contact</h4>
-      <p class="text-md">
-        Please feel free to reach out. The best way to contact me is via email,
-        but feel free to check out my social media too.
-      </p>
-      <div class="flex justify-tart gap-10 pt-5 text-2xl md:justify-center">
-        <a href="mailto:henry.shanahan@gmail.com"
-          ><i
-            class="fa-solid fa-envelope hover:text-red-300 transition-colors duration-300"
-          ></i
-        ></a>
+      <div class="flex flex-col justify-center items-center text-center">
+        <h4 class="text-2xl mb-5">Contact</h4>
+        <p class="text-md">
+          The best way to contact me is via email, please click the link below.
+        </p>
+        <a href="mailto:henry.shanahan@gmail.com">
+          <i
+            class="fa-solid fa-envelope hover:text-red-300 transition-colors duration-300 text-2xl lg:text-6xl p-5"
+          ></i>
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center text-center">
+        <h4 class="text-2xl mb-5">Social Media</h4>
+        <p>
+          I am active on social media, please feel free to look at my LinkedIn.
+        </p>
         <a
           href="https://www.linkedin.com/in/henry-shanahan-b40603148"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i
-            class="fa-brands fa-linkedin hover:text-red-300 transition-colors duration-300"
+            class="fa-brands fa-linkedin hover:text-red-300 transition-colors duration-300 text-2xl lg:text-6xl p-5"
           ></i>
         </a>
+      </div>
+      <div class="flex flex-col justify-center items-center text-center">
+        <h4 class="text-2xl mb-5">Projects</h4>
+        <p>
+          If you want to see my other projects, please head over to my GitHub.
+        </p>
         <a
           href="https://github.com/henry-shanahan"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i
-            class="fa-brands fa-square-github hover:text-red-300 transition-colors duration-300"
+            class="fa-brands fa-square-github hover:text-red-300 transition-colors duration-300 text-2xl lg:text-6xl p-5"
           ></i>
         </a>
       </div>
-      <p class="pt-5">&copy; Henry Shanahan 2025</p>
+      <div class="flex flex-col justify-center items-center">
+        <img
+          class="h-20 w-20 lg:h-40 lg:w-40"
+          src="./images/logo-removebg-preview.png"
+          alt="logo"
+        />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="text-[#4e4e4e] text-center bg-[#1A1A19] font-sans p-2 text-sm">
+        Copyright &copy; 2025 Henry Shanahan. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>
