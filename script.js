@@ -44,24 +44,39 @@ function loadProjects() {
 
         const hoverOverlay = document.createElement("div");
         hoverOverlay.className =
-          "absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-50 transition-opacity duration-300";
+          "absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-50 transition-opacity duration-300";
 
         const hoverTitle = document.createElement("p");
         hoverTitle.textContent = projects.title;
         hoverTitle.className = "text-white text-lg font-bold";
 
-        hoverOverlay.appendChild(hoverTitle);
+        // add link to github
+        const gitHubLink = document.createElement("a");
+        gitHubLink.href = projects.link;
+        gitHubLink.target = "_blank";
+        gitHubLink.rel = "noopener noreferrer";
+        gitHubLink.textContent = "GitHub ";
+        gitHubLink.className = "text-white hover:text-red-300 ";
 
+        // add github logo
+        const gitHubLogo = document.createElement("i");
+        gitHubLogo.className =
+          "fa-brands fa-square-github hover:text-red-300 text-white";
+
+        gitHubLink.appendChild(gitHubLogo);
+
+        hoverOverlay.appendChild(hoverTitle);
+        hoverOverlay.appendChild(gitHubLink);
         // Create the description
         const description = document.createElement("p");
         description.textContent = projects.description;
         description.className = "mt-3 text-gray-700";
 
         // add all elements to the grid
+
         portfolioGrid.appendChild(images);
         portfolioGrid.appendChild(hoverOverlay);
         portfolioGrid.appendChild(description);
-
         // Add the grid to the portfolio
         portfolio.appendChild(portfolioGrid);
       });
