@@ -12,14 +12,15 @@
     <script defer src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#EAFAEA] text-slate-700">
+  <body class="bg-[#AAB396] text-slate-700">
     <!-- Navbar -->
     <nav
       id="navbar"
-      class="fixed top-0 left-0 w-full flex justify-between items-center px-10 py-5 bg-[#CAE0BC] shadow-lg flex-wrap z-50 font-serif"
+      class="fixed top-0 left-0 w-full flex justify-end items-center px-10 py-5 shadow-lg flex-wrap z-50 font-serif"
     >
-      <!-- Name on the Left -->
-      <p class="text-slate-800 text-lg font-semibold">Henry Shanahan</p>
+      <!-- logo on the Left -->
+
+      <!-- <img class="h-10 w-10 m-o" src="./images/logo-removebg-preview.png" /> -->
 
       <!-- Nav Links on the Right -->
       <div class="flex gap-10">
@@ -46,25 +47,37 @@
 
     <!-- Full Page Header -->
     <header
-      class="h-screen flex flex-col justify-center items-center bg-cover bg-center relative bg-[#CAE0BC] font-sans"
+      class="relative h-screen bg-cover bg-center bg-[#CAE0BC] font-sans flex flex-col justify-center items-center"
     >
-      <h1
-        class="text-4xl md:text-6xl lg:text-7xl font-bold text-[#FFFAEC] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)] text-center"
-      >
-        Welcome to My Portfolio
-      </h1>
-      <h4
-        class="text-lg text-[#FFFAEC] mt-4 lg:text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]"
-      >
-        Scroll down to explore
-      </h4>
+      <img
+        class="absolute w-full h-full object-cover left-0 z-0"
+        src="./images/background pic.jpg"
+        alt="water drop background"
+      />
 
+      <div class="z-10 flex flex-col justify-center items-center gap-5">
+        <img
+          class="md:w-40 h-40 xl:w-60 h-60"
+          src="./images/logo-removebg-preview.png"
+          alt="HTS"
+        />
+
+        <h1
+          class="text-center text-4xl md:text-6xl lg:text-7xl font-bold text-[#FFFAEC] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)] z-10"
+        >
+          Welcome to My Portfolio
+        </h1>
+        <h4
+          class="text-lg text-center text-[#FFFAEC] mt-4 lg:text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)] z-10"
+        >
+          Scroll down to explore
+        </h4>
+      </div>
       <!-- Down Arrow -->
-      <a id="downArrow" href="#main" class="absolute bottom-10 animate-bounce">
+      <a id="downArrow" href="#about" class="absolute bottom-10 animate-bounce">
         <i
           class="fa-sharp fa-solid fa-angle-down text-5xl text-[#FFFAEC] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]"
         ></i>
-        <span id="main"></span>
       </a>
     </header>
 
@@ -72,16 +85,17 @@
     <main
       class="flex flex-col justify-start mt-20 px-5 lg:px-0 max-w-7xl mx-auto"
     >
-      <h4 class="text-4xl text-center md:mb-10 lg:mb-0">About me</h4>
+      <h4 id="about" class="text-4xl mt-10 text-center md:mb-10 lg:mb-0">
+        About me
+      </h4>
 
       <section
-        id="about"
         class="flex flex-col lg:flex-row lg:flex-row-[1fr_2fr] items-center lg:items-start gap-5 text-left md:gap-10 lg:gap-32 xl:gap-40 lg:text-left lg:py-20"
       >
         <!-- Profile Picture -->
         <div class="flex justify-center">
           <img
-            src="/images/IMG_4673.JPG"
+            src="./images/IMG_4673.JPG"
             alt="Profile Picture"
             class="w-40 h-40 lg:my-10 rounded-full border-4 border-gray-300 shadow-lg md:w-64 md:h-64 md:mx-10"
           />
