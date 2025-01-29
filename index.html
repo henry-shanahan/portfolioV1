@@ -9,6 +9,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+
     <script defer src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -16,7 +25,7 @@
     <!-- Navbar -->
     <nav
       id="navbar"
-      class="fixed top-0 left-0 w-full flex justify-end items-center px-10 py-5 shadow-lg flex-wrap z-50 font-serif"
+      class="fixed top-0 left-0 w-full flex justify-end items-center px-10 py-5 shadow-lg flex-wrap z-50"
     >
       <!-- Nav Links on the Right -->
       <div class="flex gap-10">
@@ -51,23 +60,26 @@
         alt="water drop background"
       />
 
-      <div class="z-10 flex flex-col justify-center items-center gap-5">
+      <div
+        id="title "
+        class="z-10 flex flex-col justify-center items-center gap-5"
+      >
         <img
-          class="md:w-40 h-40 xl:w-60 h-60"
+          class="w-40 h-40 xl:w-60 xl:h-60"
           src="./images/logo-removebg-preview.png"
           alt="HTS"
         />
 
         <h1
-          class="text-center text-4xl md:text-6xl lg:text-7xl font-bold text-[#FFFAEC] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)] z-10"
+          class="text-3xl md:text-6xl lg:text-7xl font-bold text-[#FFFAEC] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)] z-10 bg-black bg-opacity-20 p-3 inline-block rounded-md"
         >
           Welcome to My Portfolio
         </h1>
-        <h4
-          class="text-lg text-center text-[#FFFAEC] mt-4 lg:text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)] z-10"
+        <h6
+          class="text-lg text-[#FFFAEC] lg:text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)] z-10 bg-black bg-opacity-20 p-3 inline-block rounded-md"
         >
           Scroll down to explore
-        </h4>
+        </h6>
       </div>
       <!-- Down Arrow -->
       <a id="downArrow" href="#about" class="absolute bottom-10 animate-bounce">
@@ -77,53 +89,59 @@
       </a>
     </header>
 
-    <!-- Main body -->
-    <main class="flex flex-col justify-start mt-20 px-5 lg:px-0">
-      <h4 id="about" class="text-4xl mt-10 text-center md:mb-10 lg:mb-0">
-        About me
+    <main class="flex flex-col justify-start mt-20">
+      <h4
+        id="about"
+        class="px-10 text-left text-4xl lg:text-6xl mt-10 lg:text-center md:mb-10 lg:mb-0"
+      >
+        Henry Shanahan
       </h4>
       <!-- About me -->
       <section
-        class="flex flex-col lg:flex-row lg:flex-row-[1fr_2fr] items-center justify-center lg:items-start gap-5 text-left md:gap-10 lg:gap-32 xl:gap-40 lg:text-left lg:py-20"
+        class="flex flex-col lg:flex-row items-center justify-center lg:items-start gap-5 text-left md:gap-10 lg:gap-32 xl:gap-40 lg:text-left lg:py-5"
       >
         <!-- Profile Picture -->
-        <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center lg:w-1/3 self-start">
           <img
             src="./images/IMG_4673.JPG"
-            alt="Profile Picture"
-            class="w-40 h-40 lg:my-10 rounded-full border-4 border-gray-300 shadow-lg md:w-64 md:h-64 md:mx-10"
+            alt="Profile picture"
+            class="w-48 h-48 rounded-full border-4 border-gray-300 shadow-lg md:w-64 md:h-64 m-10"
           />
         </div>
 
         <!-- Text Content -->
-        <div class="max-w-2xl lg:my-10">
-          <p class="mb-10">
-            Based in Bristol, I've made a bold career transition from education
-            to the exciting field of technology. I'm currently honing my skills
-            in iO Academy's Software Developer Essentials course, with the goal
-            of specializing in Cyber Security.
+        <div class="max-w-3xl lg:w-2/3 lg:my-10 text-xl">
+          <h5 class="text-3xl mb-10 line-through">The Past</h5>
+          <p class="mb-2">
+            I worked as a Primary School Teacher for 5 Years in Bristol.
           </p>
-          <ul class="list-disc list-inside mt-4 space-y-5 text-left">
-            <li>
-              My technical skills include: HTML, CSS, JavaScript, PHP, SQL, and
-              React.
-            </li>
-            <li>Level 4 Cyber Security Apprenticeship with Cabinet Office.</li>
-            <li>
-              Expanding my knowledge by learning Python and familiarising myself
-              with Linux.
-            </li>
-          </ul>
+          <p class="mb-10">
+            In the middle of this, I worked in Michelin-Star Kitchens for 2
+            years.
+          </p>
+          <h5 class="text-3xl mb-10 underline">The Present</h5>
+          <p class="mb-2">
+            Honing my skills in iO Academy's Software Developer Essentials
+            course.
+          </p>
+          <p class="mb-10">
+            Currently Learning; HTML, CSS, JavaScript, PHP, SQL, and React.
+          </p>
+          <h5 class="text-3xl mb-10 overline">The Future</h5>
+          <p class="mb-2">
+            Level 4 Cyber Security Apprenticeship with the Cabinet Office.
+          </p>
+          <p class="mb-10">Proficiency in Python and Linux.</p>
         </div>
       </section>
 
       <!-- Portfolio Section -->
       <section
         id="portfolio"
-        class="my-10 text-left md:text-center bg-[#FFFDF0] w-full px-50 py-20"
+        class="text-left md:text-center bg-[#FFFDF0] w-full px-50 py-20"
       >
-        <div class="max-w-7xl mx-auto">
-          <h4 class="text-4xl mb-10">Portfolio</h4>
+        <div class="mx-auto m-0">
+          <h4 class="text-6xl mb-10">Portfolio</h4>
           <p class="mb-10">
             Here is a selection of the projects that I have worked on so far.
           </p>
@@ -176,7 +194,7 @@
       </section>
 
       <!-- CV Section -->
-      <section id="cv" class="text-left md:text-center p-20 md:m-20">
+      <section id="cv" class="text-left md:text-center p-5 md:p-20 md:m-20">
         <h4 class="text-4xl mb-10">CV</h4>
         <p class="mb-5">
           Having a diverse background in education and the food service industry
@@ -252,7 +270,10 @@
 
     <!-- Footer -->
     <footer>
-      <p class="text-[#4e4e4e] text-center bg-[#1A1A19] font-sans p-2 text-sm">
+      <p
+        id="copyright"
+        class="text-[#4e4e4e] text-center bg-[#1A1A19] p-2 text-sm"
+      >
         Copyright &copy; 2025 Henry Shanahan. All rights reserved.
       </p>
     </footer>

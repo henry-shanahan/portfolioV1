@@ -38,7 +38,7 @@ function loadProjects() {
         images.src = projects.image;
         images.alt = projects.alt;
         images.className =
-          "w-full h-60 rounded-lg shadow-lg transition-all duration-300 group-hover:grayscale";
+          "w-full h-60 rounded-lg shadow-md transition-all duration-300 group-hover:grayscale";
 
         //Create hover & greyscale
 
