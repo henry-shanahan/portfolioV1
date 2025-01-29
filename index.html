@@ -12,16 +12,12 @@
     <script defer src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#FFF8E8] text-slate-700">
+  <body class="bg-[#F5F5F5] text-slate-700 m-0 p-0">
     <!-- Navbar -->
     <nav
       id="navbar"
       class="fixed top-0 left-0 w-full flex justify-end items-center px-10 py-5 shadow-lg flex-wrap z-50 font-serif"
     >
-      <!-- logo on the Left -->
-
-      <!-- <img class="h-10 w-10 m-o" src="./images/logo-removebg-preview.png" /> -->
-
       <!-- Nav Links on the Right -->
       <div class="flex gap-10">
         <a
@@ -82,18 +78,16 @@
     </header>
 
     <!-- Main body -->
-    <main
-      class="flex flex-col justify-start mt-20 px-5 lg:px-0 max-w-7xl mx-auto"
-    >
+    <main class="flex flex-col justify-start mt-20 px-5 lg:px-0">
       <h4 id="about" class="text-4xl mt-10 text-center md:mb-10 lg:mb-0">
         About me
       </h4>
-
+      <!-- About me -->
       <section
-        class="flex flex-col lg:flex-row lg:flex-row-[1fr_2fr] items-center lg:items-start gap-5 text-left md:gap-10 lg:gap-32 xl:gap-40 lg:text-left lg:py-20"
+        class="flex flex-col lg:flex-row lg:flex-row-[1fr_2fr] items-center justify-center lg:items-start gap-5 text-left md:gap-10 lg:gap-32 xl:gap-40 lg:text-left lg:py-20"
       >
         <!-- Profile Picture -->
-        <div class="flex justify-center">
+        <div class="flex justify-center items-center">
           <img
             src="./images/IMG_4673.JPG"
             alt="Profile Picture"
@@ -124,62 +118,71 @@
       </section>
 
       <!-- Portfolio Section -->
-      <section id="portfolio" class="my-10 text-left md:text-center">
-        <h4 class="text-4xl mb-10">Portfolio</h4>
-        <p class="mb-10">
-          Here is a selection of the projects that I have worked on so far.
-        </p>
-        <div
-          id="portfolioGrid"
-          class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5"
-        >
-          <div class="mx-auto w-80 md:w-96">
-            <img
-              src="/images/elementor-placeholder-image.webp"
-              class="w-full h-60 object-cover rounded-lg shadow-lg"
-              alt="placeholder"
-            />
-            <p class="mt-3 text-gray-700">
-              This is a brief description of the first project.
-            </p>
-          </div>
-          <div class="mx-auto w-80 md:w-96">
-            <img
-              src="/images/elementor-placeholder-image.webp"
-              class="w-full h-60 object-cover rounded-lg shadow-lg"
-              alt="placeholder"
-            />
-            <p class="mt-3 text-gray-700">
-              This is a brief description of the second project.
-            </p>
-          </div>
-          <div class="mx-auto w-80 md:w-96">
-            <img
-              src="/images/elementor-placeholder-image.webp"
-              class="w-full h-60 object-cover rounded-lg shadow-lg"
-              alt="placeholder"
-            />
-            <p class="mt-3 text-gray-700">
-              This is a brief description of the third project.
-            </p>
-          </div>
-          <div class="mx-auto w-80 md:w-96">
-            <img
-              src="/images/elementor-placeholder-image.webp"
-              class="w-full h-60 object-cover rounded-lg shadow-lg"
-              alt="placeholder"
-            />
-            <p class="mt-3 text-gray-700">
-              This is a brief description of the fourth project.
-            </p>
+      <section
+        id="portfolio"
+        class="my-10 text-left md:text-center bg-[#FFFDF0] w-full px-50 py-20"
+      >
+        <div class="max-w-7xl mx-auto">
+          <h4 class="text-4xl mb-10">Portfolio</h4>
+          <p class="mb-10">
+            Here is a selection of the projects that I have worked on so far.
+          </p>
+          <div
+            id="portfolioGrid"
+            class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5"
+          >
+            <div class="mx-auto w-80 md:w-96">
+              <img
+                src="/images/elementor-placeholder-image.webp"
+                class="w-full h-60 object-cover rounded-lg shadow-lg"
+                alt="placeholder"
+              />
+              <p class="mt-3 text-gray-700">
+                This is a brief description of the first project.
+              </p>
+            </div>
+            <div class="mx-auto w-80 md:w-96">
+              <img
+                src="/images/elementor-placeholder-image.webp"
+                class="w-full h-60 object-cover rounded-lg shadow-lg"
+                alt="placeholder"
+              />
+              <p class="mt-3 text-gray-700">
+                This is a brief description of the second project.
+              </p>
+            </div>
+            <div class="mx-auto w-80 md:w-96">
+              <img
+                src="/images/elementor-placeholder-image.webp"
+                class="w-full h-60 object-cover rounded-lg shadow-lg"
+                alt="placeholder"
+              />
+              <p class="mt-3 text-gray-700">
+                This is a brief description of the third project.
+              </p>
+            </div>
+            <div class="mx-auto w-80 md:w-96">
+              <img
+                src="/images/elementor-placeholder-image.webp"
+                class="w-full h-60 object-cover rounded-lg shadow-lg"
+                alt="placeholder"
+              />
+              <p class="mt-3 text-gray-700">
+                This is a brief description of the fourth project.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- CV Section -->
-      <section id="cv" class="mt-10 text-left md:text-center p-5">
-        <h4 class="text-4xl mb-5">CV</h4>
+      <section id="cv" class="text-left md:text-center p-20 md:m-20">
+        <h4 class="text-4xl mb-10">CV</h4>
         <p class="mb-5">
+          Having a diverse background in education and the food service industry
+          has equipped me with a unique skillset.
+        </p>
+        <p class="mb-10">
           If you would like further information about my working history, please
           feel free to download my CV.
         </p>
