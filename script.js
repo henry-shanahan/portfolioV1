@@ -31,21 +31,20 @@ function loadProjects() {
         //Create the grid
 
         const portfolioGrid = document.createElement("div");
-        portfolioGrid.className =
-          "relative group mx-auto md:w-96 flex flex-col items-center space-y-4";
+        portfolioGrid.className = "relative group mx-auto w-80 md:w-96";
 
         // Input the images from the JSON file
         const images = document.createElement("img");
         images.src = projects.image;
         images.alt = projects.alt;
         images.className =
-          "md:w-full h-60 rounded-lg shadow-md transition-all duration-300 group-hover:grayscale";
+          "w-full h-60 rounded-lg shadow-md transition-all duration-300 group-hover:grayscale";
 
         //Create hover & greyscale
 
         const hoverOverlay = document.createElement("div");
         hoverOverlay.className =
-          "absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-50 transition-opacity duration-300 w-full h-full";
+          "absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-50 transition-opacity duration-300 rounded-lg";
 
         const hoverTitle = document.createElement("p");
         hoverTitle.textContent = projects.title;
@@ -71,7 +70,7 @@ function loadProjects() {
         // Create the description
         const description = document.createElement("p");
         description.textContent = projects.description;
-        description.className = "mt-3 text-gray-700 text-center px-4";
+        description.className = "mt-3 text-gray-700";
 
         // add all elements to the grid
 
