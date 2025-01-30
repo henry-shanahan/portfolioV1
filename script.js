@@ -60,6 +60,7 @@ function loadProjects() {
 
         // add github logo
         const gitHubLogo = document.createElement("i");
+
         gitHubLogo.className =
           "fa-brands fa-square-github hover:text-red-300 text-white";
 
