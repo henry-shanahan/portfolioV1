@@ -22,3 +22,9 @@ h6 {
 body {
   font-family: "Lato", serif;
 }
+#portfolioGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
