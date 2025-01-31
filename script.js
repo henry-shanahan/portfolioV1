@@ -1,5 +1,21 @@
 "use-strict";
 
+// Typewriter test
+
+window.onload = typeWriter;
+
+let i = 0;
+let text = "Welcome to Henry's Portfolio"; /* The text */
+let speed = 100; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter(e) {
+  if (i < text.length) {
+    document.getElementById("test").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
 // Add shadow to nav bar on click
 
 document.querySelector("#downArrow").addEventListener("click", arrowClick);
