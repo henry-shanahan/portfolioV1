@@ -46,7 +46,7 @@ function loadProjects() {
         hoverOverlay.className =
           "absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-50 transition-opacity duration-300 rounded-lg";
 
-        const hoverTitle = document.createElement("p");
+        const hoverTitle = document.createElement("h5");
         hoverTitle.textContent = projects.title;
         hoverTitle.className = "text-white text-lg font-bold";
 
