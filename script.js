@@ -64,21 +64,21 @@ function loadProjects() {
 
         const hoverTitle = document.createElement("h5");
         hoverTitle.textContent = projects.title;
-        hoverTitle.className = "text-white text-lg font-bold";
+        hoverTitle.className = "text-white text-2xl font-bold";
 
         // add link to github
         const gitHubLink = document.createElement("a");
         gitHubLink.href = projects.link;
         gitHubLink.target = "_blank";
         gitHubLink.rel = "noopener noreferrer";
-        gitHubLink.textContent = "GitHub ";
+        gitHubLink.textContent = "";
         gitHubLink.className = "text-white hover:text-red-300 ";
 
         // add github logo
         const gitHubLogo = document.createElement("i");
 
         gitHubLogo.className =
-          "fa-brands fa-square-github hover:text-red-300 text-white";
+          "fa-brands fa-square-github hover:text-red-300 text-white text-4xl";
 
         gitHubLink.appendChild(gitHubLogo);
 
